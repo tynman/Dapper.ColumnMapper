@@ -25,6 +25,16 @@ namespace Dapper.ColumnMapper
         {
             return _internalMapper.FindConstructor(names, types);
         }
+        
+        public ConstructorInfo FindExplicitConstructor()
+        {
+            return _internalMapper.FindExplicitConstructor();
+        }
+        
+        public ConstructorInfo FindExplicitConstructor()
+        {
+            return _internalMapper.FindExplicitConstructor();
+        }
 
         public SqlMapper.IMemberMap GetConstructorParameter(ConstructorInfo constructor, string columnName)
         {
